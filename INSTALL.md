@@ -66,6 +66,13 @@ Fedora:
 
     pacman -S base-devel mingw-w64-i686-gcc mingw-w64-i686-cmake mingw-w64-i686-make mingw-w64-i686-curl mingw-w64-i686-freetype mingw-w64-i686-giflib mingw-w64-i686-libjpeg-turbo mingw-w64-i686-libpng mingw-w64-i686-libwebp mingw-w64-i686-pixman mingw-w64-i686-SDL2 mingw-w64-i686-SDL2_image mingw-w64-i686-tinyxml2 mingw-w64-i686-v8 mingw-w64-i686-zlib mingw-w64-i686-libarchive
 
+个人踩坑避坑指南：
+> 如果你使用上述的命令出现报错，并且你知道自己的系统是64位的，请使用下方的命令
+
+```
+pacman -S base-devel mingw-w64-ucrt-x86_64-gcc mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-make mingw-w64-ucrt-x86_64-curl mingw-w64-ucrt-x86_64-freetype mingw-w64-ucrt-x86_64-giflib mingw-w64-ucrt-x86_64-libjpeg-turbo mingw-w64-ucrt-x86_64-libpng mingw-w64-ucrt-x86_64-libwebp mingw-w64-ucrt-x86_64-pixman mingw-w64-ucrt-x86_64-SDL2 mingw-w64-ucrt-x86_64-SDL2_image mingw-w64-ucrt-x86_64-tinyxml2 mingw-w64-ucrt-x86_64-v8 mingw-w64-ucrt-x86_64-zlib mingw-w64-ucrt-x86_64-libarchive
+```
+
 ### MacOS 依赖
 
 在 MacOS 上你需要 Mac OS X 11.0 SDK 和对应的 Xcode。
